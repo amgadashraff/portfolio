@@ -1,0 +1,454 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --best-color:#001e4d;
+    --semigreen--: rgba(152, 251, 152, 0.58);
+    --light:white;
+    --fontmael: "Playwrite BE VLG", cursive;;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.container{  
+    padding: 10px;  
+    margin: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+} 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* start of landing  */
+.indicator{
+    background-color:red;
+    width: 0;
+    height: 4px;
+    transition:.04s ease-out ;
+    -webkit-transition:.04s ease-out ;
+    -moz-transition:.04s ease-out ;
+    -ms-transition:.04s ease-out ;
+    -o-transition:.04s ease-out ;
+}
+.header {
+    background-color: var(--light);
+    position: fixed;
+    height: 85px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    transition: .2s;
+    z-index: 4;
+    box-shadow: -18px -1px 3px 1px black;
+}
+.header .headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;  
+}
+.header.change{
+    --best-color:white; 
+    --light:#001e4d; 
+    
+}
+ 
+.header .headerContent .logo{
+    color: var(--best-color);
+    font-size: 30px; 
+    font-family: var(--fontmael);
+    cursor:  text;
+    font-weight: bold;
+}
+.header .headerContent .nav a{
+    margin-left: 10px;
+    color: var(--best-color);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header .headerContent .nav a:hover{
+    color: blue;
+}
+.header .headerContent .bars{
+    display: none;
+}
+.landing{
+    background-color: var(--best-color);
+    height: 80vh;
+}
+.landing .landingContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 90px;
+}
+.landing .landingContent .text{
+    color: var(--light);
+    text-transform: capitalize;
+    line-height: 2;
+    padding: 10px;
+    
+}
+.landing .landingContent .text p{
+    font-weight: bold;
+    font-size: 18px;
+}
+.landing .landingContent .text .link{
+    display: block;
+    width: fit-content;
+    background-color: blue;
+    color: white;
+    padding-inline: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+.landing .landingContent .text .link:hover{
+    opacity: .8;
+    transition: .2s;
+    -webkit-transition: .2s  ;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+.landing .landingContent .text h3 #job{
+    font-size: 30px;
+    color: blue;
+}
+.landing .landingContent .text ul {
+    margin-top: 20px;
+}
+.landing .landingContent .text ul a{
+    color: var(--light);
+    font-size: 20px;
+    margin: 10px;
+}
+.landing .landingContent .text ul a:hover{
+    color: blue;
+}
+.landing .landingContent .image  {
+    flex-basis: 50%;
+}
+.landing .landingContent .image img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-shadow:  0  0 7px black;
+}
+/* end of landing  */
+/* start of services  */
+.services {
+    margin-block: 40px;
+}
+.services .title{
+    text-align: center;
+    font-size: 30px;
+    color: var(--best-color);
+    margin-bottom: 30px;
+}
+.services .servContent{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.services .servContent .box{
+    text-align: center; 
+    padding: 5px; 
+    border: 1px solid var(--best-color);
+    flex-basis: calc((100% - 30px )/3);
+    margin: 5px auto;
+    cursor: pointer;
+}
+.services .servContent .box:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
+.services .servContent .box i {
+    font-size: 80px;
+    color: var(--best-color);
+    padding: 10px;
+    margin : 20px;
+}
+.services .servContent .box .text{
+    padding: 10px;
+}
+.services .servContent .box h4{
+    font-size: 15px ;
+    color: var(--best-color);
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.services .servContent .box p{
+    color: #777;
+}
+/* end of services  */
+/* start of projects */
+.projects {
+    
+}
+.projects h2{
+    text-align: center;
+    color:var(--best-color);
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 20px 0  40px 0;
+}
+.projects .projectContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.projects .projectContent .box{
+    margin: 5px;
+    border: 1px solid var(--best-color);
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: var(--light);
+    flex-grow: 1; 
+}
+ 
+.projects .projectContent .box img{
+    width: 100%;
+    height: 100px;
+    
+}
+.projects .projectContent .box img:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.projects .projectContent .box .text{
+    padding: 10px; 
+}
+.projects .projectContent .box .text p{
+    color: #777;
+}
+.projects .projectContent .box .text span{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px;
+}
+.projects .projectContent .box .text a{
+    color: blue;
+    font-weight: bold; 
+    float: right;
+    padding: 5px; 
+    
+}
+.projects .projectContent .box .text a:hover{
+    opacity: .7;
+}
+/* end of projects */
+
+/* start of contact us  */
+.contact{
+    background-color: var(--best-color);
+    padding: 30px;
+    margin-top: 40px;
+}
+.contact h2{
+    text-align: center;
+    color: var(--light);
+    text-transform: capitalize;
+    font-size: 25px; 
+}
+.contact .contContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    border-bottom: 1px solid #777; 
+    padding: 20px;
+}
+.contact .contContent a{
+    margin: 10px;
+    
+    
+}
+.contact .contContent a i{
+    font-size: 25px;
+    color:var(--light); 
+    padding: 5px;
+}
+.contact .contContent a:hover i{
+    color: blue;
+}
+/* end of contact us  */
+/* start of footer  */
+footer{
+    background-color: var(--best-color);
+    color: var(--light);
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+
+}
+footer span{
+    color:blue;
+}
+/* end of footer  */
+
+
+
+
+/* start of qry  */
+@media (max-width: 767px) {
+    /* landing qry */
+    .landing .landingContent .text .link{
+        margin-top: 10px;
+    }
+    .header .headerContent .bars{
+        display: block;
+        font-size: 25px;
+        color: var(--best-color);
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .header .headerContent .nav{
+        position: absolute;
+        top: 150%;
+        left:0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--best-color); 
+        box-shadow: 0 0 2px black;
+        width: 100%;
+        margin: auto;
+        padding: 5px;
+        border-radius:5px ;
+        display: none;
+    }
+    .header .headerContent .nav::after{
+        content: "";
+        position: absolute;
+        top: -32px;
+        right: 17px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent blue transparent; 
+        
+    }
+    .header .headerContent .nav.show{
+        display: flex;
+    }
+    .header .headerContent .nav a{
+        color: var(--light);
+        padding: 10px;
+        width: 100%;
+        margin: 5px auto ;
+        
+}
+    .header .headerContent .nav a:not(:last-child){
+        border-bottom: 1px solid #777;  
+    }
+    .header .headerContent .nav a:not(:last-child):hover{
+        border-bottom: 1px solid  blue;
+    }
+    .landing .landingContent .image  {
+        display: none;
+    }
+    .landing .landingContent .text h3 #job{
+        font-size: 20px;
+    }
+    /* end langing qry */
+    /* start of services  */
+    .services .servContent .box{
+        flex-basis: 100%;
+    }
+    /* end of services  */
+    /* start of contac qry */
+    .contact .contContent{
+        flex-direction: column;
+    }
+    .contact h2{
+        font-size: 12px;
+
+    } 
+    .contact .contContent a i{
+        font-size: 16px;
+        margin-top: 10px;
+        background-color: var(--best-color);
+    }
+    /* end of contac qry */
+}
+
+@media (min-width: 768px) 
+And (max-width: 991px){
+    /* landing qry */
+    
+    .landing .landingContent .image  {
+     flex-basis: 37%;
+    
+}
+    .landing .landingContent .text{
+        z-index: 2;
+        margin-top: 70px;
+    }
+     
+    /* end langing qry */
+    /* start of services  */
+    .services .servContent .box{ 
+        flex-basis: calc((100% - 30px )/2);
+        flex-grow: 1;
+    }
+    /* end of services  */
+}
+@media (max-width: 1200px){
+    /* landig qry */
+    .landing {
+        height: 50vh;
+    }
+    /*end  landing qry */
+}
+/* end of qry  */
